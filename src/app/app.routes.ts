@@ -1,6 +1,14 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './shared/header/header.component';
+import { PortafolioComponent } from './pages/portafolio/portafolio.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ItemComponent } from './pages/item/item.component';
 
 export const routes: Routes = [
-    {path: 'header', component: HeaderComponent},
+    {path: '', component: PortafolioComponent},
+    {path: 'about', component: AboutComponent},
+    {path: 'item', component: ItemComponent},
+    {path: '**', pathMatch: 'full', redirectTo: ''},
 ];
+
+
+
